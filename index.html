@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Cloud Practitioner Motivation Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/020/348/552/original/motivation-icon-vector.jpg">
+</head>
+<body>
+  <header>
+     <h1>AWS Cloud Practitioner Motivation Calendar</h1>
+<div class="motivation-banner">
+  <img src="https://static.vecteezy.com/system/resources/previews/020/348/552/original/motivation-icon-vector.jpg" alt="Motivational Icon" class="motivation-icon">
+  <p class="motivation-quote">Be your own star. Don’t let others tell you otherwise.</p>
+</div>
+   
+    <p class="subtitle">Your daily guide to stay motivated and pass the AWS exam</p>
+    <p id="daily-quote"></p>
+    <div class="controls">
+      <label for="week-select">Week:</label>
+      <select id="week-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <button id="theme-toggle">🌙 Toggle Theme</button>
+      <button id="export-pdf">📄 Export to PDF</button>
+      <button><a href="awstest/aws-test.html">General AWS Test</a></button>  
+      <label for="language-select"></label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ro">Română</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="calendar">
+    <!-- Days will be generated via JS -->
+  </main>
+  
+<p style="text-align:center; font-size:1.1rem; color:#2c3e50;">
+  Want to go further? Explore free AWS learning resources curated just for you.
+</p>
+  <footer>
+    <button onclick="resetProgress()">🔄 Reset Progress</button>
+    <a href="learn-aws.html" class="learn-btn">📚 Learn AWS – Free Resources</a>
+    <p class="footer-note">“You survived yesterday. Today is a new chance.”</p>
+    <p>Created with ❤️ by Maria</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

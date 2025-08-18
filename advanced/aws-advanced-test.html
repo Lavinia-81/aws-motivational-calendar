@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Advanced Test</title>
+ <link rel="stylesheet" href="advanced.css" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="wave-bg"></div>
+  <header class="toolbar">
+    <p id="timer">⏱️ 00:00</p>
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+    <button id="export-pdf">📄 Export to PDF</button>
+    <div class="language-select">
+    <label for="lang-select">🌍 Language:</label>
+    <select id="lang-select">
+      <option value="en">English</option>
+      <option value="ro">Română</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+</header>
+<div class="motivation-banner">
+  <img src="https://static.vecteezy.com/system/resources/previews/020/348/552/original/motivation-icon-vector.jpg" alt="Motivational Icon" class="motivation-icon">
+  <p class="motivation-quote">Be your own star. Don’t let others tell you otherwise.</p>
+</div>
+
+  <div class="container">
+    <h1> 🧠 AWS Cloud Practitioner - Advanced Test</h1>
+    <form id="quizForm"></form>
+    <button id="submitBtn">Submit Answers</button>
+    <div id="result"></div>
+    <!-- aws-test.html -->
+  </div>
+  <script src="aws-advanced-test.js"></script>
+</body>
+</html>
