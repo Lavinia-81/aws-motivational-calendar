@@ -356,8 +356,7 @@ const translations = {
   }
 };
 
-
-// ✅ Cronometru
+// ✅ Timer
 function updateTimer() {
   const mins = String(Math.floor(seconds / 60)).padStart(2, "0");
   const secs = String(seconds % 60).padStart(2, "0");
@@ -378,18 +377,18 @@ function updateTimer() {
 
 let timerInterval = setInterval(updateTimer, 1000);
 
-// ✅ Schimbare temă
+// ✅ Dark theme
 document.getElementById("theme-toggle").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-// ✅ Schimbare limbă
+// ✅ Change Language
 document.getElementById("lang-select").addEventListener("change", (e) => {
   currentLang = e.target.value;
   generateQuiz(currentLang);
 });
 
-// ✅ Generare quiz
+// ✅ Generate Quiz
 function generateQuiz(lang) {
   const t = translations[lang] || translations.en;
   form.innerHTML = "";
@@ -460,5 +459,5 @@ document.getElementById("export-pdf").addEventListener("click", () => {
   doc.save(`aws_quiz_${currentLang}.pdf`);
 });
 
-// ✅ Inițializare
+// ✅ Initialize
 generateQuiz(currentLang);

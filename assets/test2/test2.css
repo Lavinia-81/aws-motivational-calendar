@@ -1,17 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   padding: 2rem;
-  background-color: #bba987;
-  background-image: linear-gradient(45deg, #6e5f41 25%, transparent 25%),
-    linear-gradient(-45deg, #6e5f41 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #6e5f41 75%),
-    linear-gradient(-45deg, transparent 75%, #6e5f41 75%);
-  background-size: 400px 400px;
-  background-position: 1 0, 0 20px, 40px -40px, -20px 0px;
+  background-color: rgb(125, 146, 185);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .motivation-banner {
   display: flex;
   align-items: center;
@@ -22,7 +17,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,7 +38,7 @@ header {
   margin-bottom: 20px;
 }
 h1 {
-  background: linear-gradient(135deg, #a5a9af, #6e5f41);
+  background: linear-gradient(135deg, #4a5aec, #29deae);
   color: #000;
   text-align: center;
   padding: 10px 20px;
@@ -57,17 +52,16 @@ h1 {
 }
 .question {
   margin-bottom: 1.5rem;
-  width: 100%;
   font-size: 1.4rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #dbe5f6, #6e5f41);
+  background: linear-gradient(135deg, #dbe5f6, #3a7eeb);
   padding: 1rem;
   border-radius: 10px;
   border: 2px solid rgba(239, 235, 235, 0.9);
   box-shadow: 0 2px 4px rgba(239, 235, 235, 0.9);
 }
 button, #timer {
-  background: linear-gradient(135deg, #a5a9af, #6e5f41);
+  background: linear-gradient(135deg, #4a5aec, #29deae);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -80,7 +74,7 @@ button, #timer {
   transition: background 0.3s ease,opacity 0.3s ease;
 }
 button:hover, select:hover {
-  background: linear-gradient(135deg,  #5a4c31, #b6bdc9);
+  background: linear-gradient(135deg, #1624a3, #0e8061);
   opacity: 0.9;
 }
 #result {
@@ -88,7 +82,7 @@ button:hover, select:hover {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(135deg, #a5a9af, #6e5f41);
+  background: linear-gradient(135deg, #c3cfe2, #6e97d8);
   color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -96,7 +90,7 @@ button:hover, select:hover {
   animation: fadeInResult 1s ease-in-out;
 }      
 select {
-  background: linear-gradient(135deg, #a5a9af, #6e5f41);
+  background: linear-gradient(135deg, #4a5aec, #29deae);
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -107,15 +101,15 @@ select {
   transition: background 0.3s ease,opacity 0.3s ease;
 }
 body.dark {
-  background-color: rgb(62, 61, 61);
-  color: #2e1e08;
+  background-color: #33335e;
+  color: #2d39a3;
 }
 body.dark h1,
 body.dark .question,
 body.dark #result {
-  background: rgb(62, 61, 61);
+  background: #46465e;
   color: #d9d6d6;
-  box-shadow: 0 2px 6px rgba(35, 33, 33, 0.2);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
 }
 body.dark button {
   background-color: #444;

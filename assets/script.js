@@ -18,7 +18,7 @@ const weeks = {
         quote: "Success is the sum...",
         button: {
           label: "🧪 Try the test",
-          link: "test1/test.html"
+          link: "assets/test1/test.html"
         }
       },
       { name: "Thursday", activity: "Create a mindmap", quote: "Organization is not limitation..." },
@@ -35,7 +35,7 @@ const weeks = {
       {
         name: "Saturday", activity: "Mini-test on services", quote: "Keep moving forward...",  button: {
           label: "🧪 Try the test",
-          link: "test2/test2.html"
+          link: "assets/test2/test2.html"
         }
       },
       { name: "Sunday", activity: "Celebration 🎉", quote: "You've survived 100% of your hardest days..."}
@@ -61,7 +61,7 @@ const weeks = {
         quote: "Succesul este suma...",
         button: {
           label: "🧪 Încearcă testul",
-          link: "test1/test.html"
+          link: "assets/test1/test.html"
         }
       },
       { name: "Joi", activity: "Creează o hartă mentală", quote: "Organizarea nu este o limitare..." },
@@ -79,7 +79,7 @@ const weeks = {
         name: "Sâmbătă", activity: "Mini-test despre servicii", quote: "Continuă să mergi înainte...",
         button: {
           label: "🧪 Încearcă testul",
-          link: "test2/test2.html"
+          link: "assets/test2/test2.html"
         } },
       { name: "Duminică", activity: "Sărbătoare 🎉", quote: "Ai supraviețuit 100% din cele mai grele zile..." }
     ]
@@ -104,7 +104,7 @@ const weeks = {
         quote: "El éxito es la suma...",
         button: {
           label: "🧪 Prueba el test",
-          llink: "test1/test.html"
+          llink: "assets/test1/test.html"
         }
       },
       { name: "Jueves", activity: "Crea un mapa mental", quote: "La organización no es una limitación..." },
@@ -120,7 +120,7 @@ const weeks = {
       { name: "Viernes", activity: "Crea un cartel motivacional", quote: "Eres el arquitecto de tu propia vida..." },
       { name: "Sábado", activity: "Mini test sobre servicios", quote: "Sigue avanzando...", button: {
           label: "🧪 Prueba el test",
-          llink: "test2/test2.html"
+          llink: "assets/test2/test2.html"
         } },
       { name: "Domingo", activity: "Celebración 🎉", quote: "Has sobrevivido al 100% de tus días más difíciles..." }
     ]
@@ -145,7 +145,7 @@ const weeks = {
         quote: "Le succès est la somme...",
         button: {
           label: "🧪 Essaye le test",
-          link: "test1/test.html"
+          link: "assets/test1/test.html"
         }
       },
       { name: "Jeudi", activity: "Crée une carte mentale", quote: "L’organisation n’est pas une limitation..." },
@@ -161,7 +161,7 @@ const weeks = {
       { name: "Vendredi", activity: "Crée une affiche motivationnelle", quote: "Tu es l’architecte de ta propre vie..." },
       { name: "Samedi", activity: "Mini-test sur les services", quote: "Continue d’avancer...", button: {
           label: "🧪 Essaye le test",
-          link: "test2/test2.html"
+          link: "assets/test2/test2.html"
         } },
       { name: "Dimanche", activity: "Célébration 🎉", quote: "Tu as survécu à 100% de tes jours les plus difficiles..." }
     ]
@@ -437,11 +437,11 @@ function updateLanguage(lang) {
   document.querySelector(".subtitle").textContent = t.subtitle;
   document.querySelector(".footer-note").textContent = t.footer;
 
-   // Afișează citatul zilnic tradus
+   // Show today’s quote
   const dayIndex = new Date().getDay() - 1;
   document.getElementById("daily-quote").textContent = t.quotes[dayIndex] || "";
 
-  // Reafișează săptămâna curentă cu noua limbă
+  // Redisplay the current week with the new language
   const selectedWeek = document.getElementById("week-select").value;
   renderWeek(selectedWeek);
 
@@ -451,7 +451,7 @@ const availableLangs = ["en", "ro", "es", "fr"];
 let langIndex = 0;
 
 document.getElementById("language-select").addEventListener("change", (e) => {
-  const selectedLang = e.target.value; // ex: "ro"
+  const selectedLang = e.target.value;
   updateLanguage(selectedLang);
 });
 
