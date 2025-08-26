@@ -253,7 +253,7 @@ function renderWeek(weekNum) {
     return;
   }
 
-  // Citatul zilei curente
+  // Quote for today
   const todayIndex = new Date().getDay(); // 0 = Sunday
   const todayQuote = weekData[todayIndex === 0 ? 6 : todayIndex - 1]?.quote || "";
   dailyQuote.textContent = `"${todayQuote}"`;
@@ -296,7 +296,7 @@ function renderWeek(weekNum) {
   });
 }
 
-// SWeek selection
+// Week selection
 weekSelect.addEventListener("change", () => {
   renderWeek(weekSelect.value);
   showRandomQuote();
@@ -326,7 +326,6 @@ function resetProgress() {
   renderWeek(weekSelect.value);
   showRandomQuote();
 }
-
 
 // Export PDF
 document.getElementById("export-pdf").addEventListener("click", () => {
@@ -366,7 +365,7 @@ renderWeek(weekSelect.value);
 showRandomQuote();
 
 
-
+// Multilingua static texts
 const translations = {
   en: {
     title: "AWS Cloud Practitioner Motivation Calendar",
@@ -427,7 +426,7 @@ const translations = {
 };
 
 let currentLang = "en";
-
+// Upade static text based on selected language
 function updateLanguage(lang) {
   currentLang = lang;
   const t = translations[lang];

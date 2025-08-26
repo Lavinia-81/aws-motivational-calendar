@@ -22,31 +22,68 @@ body.dark {
   --accent: #9b7de0;
   --accent-hover: #b89df0;
 }
+.wave-icon {
+  transform-origin: bottom center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 40%;
+}
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(15deg); }
+  20%  { transform: rotate(-10deg); }
+  30%  { transform: rotate(15deg); }
+  40%  { transform: rotate(-5deg); }
+  50%  { transform: rotate(10deg); }
+  60%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+.wave-icon:hover {
+  animation: wave 2s ease-in-out;
+}
+.hover-message {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0a1a2f;
+  color: gold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-wrapper:hover .hover-message {
+  opacity: 1;
+}
 .motivation-banner {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 10px;
-  background-color: #f5f9ff;
+  background: linear-gradient(135deg, #fae9d4,#dfa55d);
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  max-width: 100%x;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.motivation-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-}
-
 .motivation-quote {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #322e2e;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
 }
@@ -54,11 +91,9 @@ header, footer {
   text-align: center;
   margin-bottom: 20px;
 }
-
 h1 {
   color: var(--accent);
 }
-
 .day-card {
   background: var(--card-bg);
   font-size: 1.2em;
@@ -69,7 +104,6 @@ h1 {
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   animation: slideUp 0.6s ease;
 }
-
 textarea {
   width: 99%;
   height: 60px;
@@ -79,7 +113,6 @@ textarea {
   border: 1px solid #ccc;
   resize: vertical;
 }
-
 button, select, a {
   background: var(--accent);
   color: white;
@@ -90,12 +123,10 @@ button, select, a {
   margin-left: 10px;
   transition: background 0.3s ease,opacity 0.3s ease;
 }
-
 button:hover, select:hover {
   background: var(--accent-hover);
   opacity: 0.9;
 }
-
 #daily-quote {
   font-style: italic;
   font-size: 1.4em;
@@ -103,7 +134,6 @@ button:hover, select:hover {
   margin-top: 10px;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -137,4 +167,3 @@ button:hover, select:hover {
   font-size: 14px;
   cursor: pointer;
 }
-

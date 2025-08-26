@@ -1,0 +1,27 @@
+Copyright © 2025 Maria Creation
+
+This digital product (Motivational Calendar – AWS Edition) is licensed for personal and commercial use by the original purchaser.
+
+✅ You may:
+- Use the calendar interface and planning tools for personal or client projects
+- Modify the design, code, and content for private use
+- Integrate the calendar into digital planners, educational platforms, or productivity tools
+
+❌ You may not:
+- Resell, redistribute, or repackage this product as-is
+- Claim the design, code, or interactive features as your own
+- Upload the files to free download platforms or marketplaces
+- Extract and reuse individual components (tests, quotes, timers) in other products without permission
+
+This product includes:
+- Original HTML/CSS/JS code
+- Interactive planning interface with multilingual support
+- Daily motivational quotes and toggle system
+- AWS-themed study planner with timed tests and structured progression
+- Custom UI elements, color themes, and export/reset functionality
+
+All assets are custom-made and safe for commercial use. No third-party code or icons are included without proper licensing.
+
+For extended licensing, collaboration, or educational distribution, contact: mariacreation@example.com
+
+Keep building. Keep inspiring. You’ve got this. 💙

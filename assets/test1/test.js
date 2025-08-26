@@ -249,8 +249,8 @@ const translations = {
   }
 };
 
-
 let currentLang = "en";
+
 
 // Function to generate the quiz based on the selected language
 function generateQuiz(lang) {

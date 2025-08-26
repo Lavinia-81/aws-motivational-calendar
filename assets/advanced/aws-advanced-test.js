@@ -371,7 +371,6 @@ function updateTimer() {
     resultBox.style.color = "#fff";
     return;
   }
-
   seconds++;
 }
 

@@ -249,8 +249,8 @@ const translations = {
   }
 };
 
-
 let currentLang = "en";
+
 
 // Function to generate the quiz based on the selected language
 function generateQuiz(lang) {
@@ -325,12 +325,13 @@ document.getElementById("export-pdf").addEventListener("click", () => {
 
   let y = 30;
   const questions = translations[currentLang].questions;
-
+// Loop through questions and answers
   questions.forEach((item, i) => {
     const selected = document.querySelector(`input[name="q${i}"]:checked`);
     const answer = selected ? selected.value : "—";
     const correct = item.a === answer ? "✔️" : "❌";
 
+// Add questions and answer to PDF
     doc.setFontSize(12);
     doc.text(`${i + 1}. ${item.q}`, 10, y);
     y += 6;
