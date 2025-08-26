@@ -137,4 +137,14 @@ Created by **Maria**, a resilient and creative developer who transforms setbacks
 
 ## 📃 License
 
-This project is open-source and free to use, modify, and distribute with credit to the author.
+This product is licensed for personal and commercial use by the original purchaser.
+It includes original code, design, and interactive features created by Maria Creation. All assets are custom-made and safe for commercial use.
+You may:
+- Use and modify the calendar for personal or client projects
+- Integrate it into digital planners, educational platforms, or productivity tools
+You may not:
+- Resell, redistribute, or repackage this product as-is
+- Claim the design, code, or interactive features as your own
+- Upload the files to free download platforms or marketplaces
+A full LICENSE.txt file is included in the download package.
+For extended licensing or collaboration, contact: maria.
